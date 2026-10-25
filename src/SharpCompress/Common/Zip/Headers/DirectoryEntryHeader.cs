@@ -89,6 +89,11 @@ internal partial class DirectoryEntryHeader : ZipFileEntry
             {
                 RelativeOffsetOfEntryHeader = zip64ExtraData.RelativeOffsetOfEntryHeader;
             }
+
+            if (DiskNumberStart == ushort.MaxValue)
+            {
+                DiskNumberStart = checked((ushort)zip64ExtraData.VolumeNumber);
+            }
         }
 
         var unixTimeExtra = Extra.FirstOrDefault(u => u.Type == ExtraDataType.UnixTimeExtraField);

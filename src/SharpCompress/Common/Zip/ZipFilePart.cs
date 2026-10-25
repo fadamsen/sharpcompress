@@ -60,6 +60,7 @@ internal abstract partial class ZipFilePart : FilePart
             ZipCompressionMethod.LZMA => CompressionType.LZMA,
             ZipCompressionMethod.PPMd => CompressionType.PPMd,
             ZipCompressionMethod.ZStandard => CompressionType.ZStandard,
+            ZipCompressionMethod.StarCitizenP4K => CompressionType.ZStandard,
             ZipCompressionMethod.Xz => CompressionType.Xz,
             ZipCompressionMethod.Shrink => CompressionType.Shrink,
             ZipCompressionMethod.Reduce1 => CompressionType.Reduce1,

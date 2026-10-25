@@ -17,4 +17,5 @@ internal enum ZipCompressionMethod
     Xz = 95,
     PPMd = 98,
     WinzipAes = 0x63, //http://www.winzip.com/aes_info.htm
+    StarCitizenP4K = 100,
 }
